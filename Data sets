@@ -1,0 +1,14 @@
+A Data set is a set or collection of data. This set is normally presented in a tabular pattern. Every column describes a particular variable. And each row corresponds to a given member of the data set, as per the given question. This is a part of data management
+TYPES OF DATA SET
+Numerical Dataset
+Bivariate Dataset
+Multivariate Dataset
+Categorical Dataset
+Correlation Dataset
+WHY ARE DATA SET USED FOR MACHINE LEARNING?
+This is because we can train a machine best with the help of datasets. we can label the parts of datasts, teach the machine to identify the parts, improve accuracy, and finally give recomendation using trained machine learning model
+DATA SET PYTHON CODE
+>>> import pandas as pd
+>>> nba = pd.read_csv("nba_all_elo.csv")
+>>> type(nba)
+<class 'pandas.core.frame.DataFrame'>
