@@ -1,0 +1,17 @@
+IMAGE CLASSIFICATION :
+Image Classification is the task of assigning an input image, one label from a fixed set of categories. This is one of the core problems in Computer Vision that, despite its simplicity, has a large variety of practical applications.
+
+Let’s take an example to better understand. When we perform image classification our system will receive an image as input, for example, a Cat. Now the system will be aware of a set of categories and its goal is to assign a category to the image.
+
+This problem might seem simple or easy but it is a very hard problem for the computer to solve. As you might know, the computer sees a grid of numbers and not the image of a cat as how we see it. Images are 3-dimensional arrays of integers from 0 to 255, of size Width x Height x 3. The 3 represents the three color channels Red, Green, Blue.
+
+So how can our system learn to identify this image? By using Convolutional Neural Networks. Convolutional neural networks or CNN’s are a class of deep learning neural networks that are a  huge breakthrough in image recognition. You might have a basic understanding of CNN’s by now, and we know CNN’s consist of convolutional layers, Relu layers, Pooling layers, and Fully connected dense layers.
+SOME EXAMPLE OF IMAGE CLASSIFICATION WITH PYTHON CODE
+# Importing all necessary libraries
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import Sequential
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Activation, Dropout, Flatten, Dense
+from keras import backend as K
+
+img_width, img_height = 224, 224
